@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    
+    tools:context="com.seapp.project.bbl.BBLAct" 
+    xmlns:app="http://schemas.android.com/apk/res/com.se.project.bbl">
+<FrameLayout 
+       android:layout_width="fill_parent"
+       android:id="@+id/root"
+       android:layout_height="wrap_content">
+  
+    
+     <LinearLayout
+            android:id="@+id/toolbar"
+            style="@style/Toolbar">
+
+            <ImageView
+                android:id="@+id/content_hamburger"
+                style="@style/ImageView.Hamburger"
+                android:src="@drawable/ic_menu_90" />
+
+            <com.se.project.plugin.CanaroTextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="BlackBoard Learn"
+                android:textSize="@dimen/guillotine_item_text_size" />
+        </LinearLayout>
+   
+
+   	<RelativeLayout 
+   	    android:id="@+id/view_panel"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="fill_parent"
+   	    android:layout_below="@id/toolbar"
+   	  >
+         
+   	     	 <FrameLayout 
+			    android:id="@+id/content_frame"
+			    android:layout_width="fill_parent"
+			    android:layout_marginTop="?android:attr/actionBarSize"
+			    android:layout_height="fill_parent"/>
+   	     	 
+   	     	 
+   	</RelativeLayout>
+   	
+</FrameLayout>
+
+</RelativeLayout>
